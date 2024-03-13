@@ -1,4 +1,10 @@
-#!/usr/bin/env node
+/*
+ * @Date: 2023-02-18 13:04:08
+ * @LastEditors: lolan0728 vampire.lolan@outlook.com
+ * @LastEditTime: 2024-03-13 10:26:01
+ * @FilePath: /PocketBook/bin/www
+ * @Description:
+ */
 
 // import db
 const db = require("../db/db");
@@ -16,7 +22,7 @@ db(() => {
    * Get port from environment and store in Express.
    */
 
-  var port = normalizePort(process.env.PORT || "3000");
+  var port = normalizePort(process.env.PORT || "80");
   app.set("port", port);
 
   /**

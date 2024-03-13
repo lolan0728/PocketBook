@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-03-12 14:37:03
  * @LastEditors: lolan0728 vampire.lolan@outlook.com
- * @LastEditTime: 2024-03-12 15:41:52
+ * @LastEditTime: 2024-03-12 22:11:35
  * @FilePath: /PocketBook/middleware/CheckToken.js
  * @Description:
  */
@@ -11,7 +11,7 @@ const jwt = require("jsonwebtoken");
 // 取得SECRET_KEY
 const { SECRET_KEY } = require("../config/config");
 
-// 检测token中间件
+// 检测token中间件 
 module.exports = (req, res, next) => {
   // 取得token
   let token = req.get("token");
